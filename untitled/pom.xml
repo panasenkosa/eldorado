@@ -155,7 +155,7 @@
               <!--The admin URL where the app is deployed. Here use the plugin's default value t3://localhost:7001-->
               <!--adminurl>${oracleServerUrl}</adminurl-->
               <user>root</user>
-              <password>pooh0BA3</password>
+              <password></password>
               <!--The location of the file or directory to be deployed-->
               <source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>
               <!--The target servers where the application is deployed. Here use the plugin's default value AdminServer-->
