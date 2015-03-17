@@ -7,7 +7,7 @@
                 <xs:element name="customer" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element type="xs:int" name="id"/>
+                            <xs:element type="xs:long" name="id"/>
                             <xs:element type="xs:string" name="name"/>
                             <xs:element name="orders">
                                 <xs:complexType>
@@ -15,14 +15,14 @@
                                         <xs:element name="order" maxOccurs="unbounded" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element type="xs:int" name="id"/>
+                                                    <xs:element type="xs:long" name="id"/>
                                                     <xs:element name="positions">
                                                         <xs:complexType>
                                                             <xs:sequence>
                                                                 <xs:element name="position" maxOccurs="unbounded" minOccurs="0">
                                                                     <xs:complexType>
                                                                         <xs:sequence>
-                                                                            <xs:element type="xs:int" name="id"/>
+                                                                            <xs:element type="xs:long" name="id"/>
                                                                             <xs:element type="xs:float" name="price"/>
                                                                             <xs:element type="xs:int" name="count"/>
                                                                         </xs:sequence>
