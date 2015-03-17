@@ -2,12 +2,16 @@ package com.eldorado.service;
 
 import com.eldorado.model.Customer;
 import com.eldorado.model.Order;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by panasenko on 16.03.2015.
  */
+@Service("customersOrdersCalculationsService")
+@Scope("session")
 public class CustomersOrdersCalculationsService {
 
     private List<Customer> customers;

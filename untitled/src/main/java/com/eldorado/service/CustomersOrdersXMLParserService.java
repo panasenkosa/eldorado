@@ -5,6 +5,8 @@ import com.eldorado.model.Order;
 import com.eldorado.model.OrderPosition;
 import com.eldorado.service.parsers.ElementParser;
 import com.eldorado.service.parsers.RootElementParser;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
@@ -22,6 +24,8 @@ import java.util.List;
 /**
  * Created by panasenko on 16.03.2015.
  */
+@Service("customersOrdersXMLParserService")
+@Scope("session")
 public class CustomersOrdersXMLParserService {
 
     private XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
